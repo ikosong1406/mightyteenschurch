@@ -1,0 +1,61 @@
+.eventsPart1 {
+    background-image: url('../../assets/background3.jpg');
+    background-size: cover; 
+    background-position: left center;
+    width: 98.5%;
+    height: 400px;
+    margin-top: -150px;
+    opacity: 0.2 gray;
+    padding: 10px;
+}
+.eventsPart1 h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    margin-top: 200px;
+    position: relative;
+}
+.eventsPart1 h5 {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    margin-top: 200px;
+    position: relative;
+}
+.eventsPart2 {
+    padding: 50px;
+    margin-bottom: -150px;
+}
+.image-box {
+    display: flex;
+    width: 95%;
+    border: 3px solid #800080;
+    background-color: #888888;
+    box-shadow: 0 0 10px black;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 20px;
+}
+.image-box img {
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+.content{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.content .title{
+    color: white;
+    /* width: 45%; */
+    font-size: 40px;
+}
+.content .description{
+    color: white;
+    /* width: 45%; */
+    font-size: 30px;
+}

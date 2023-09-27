@@ -1,0 +1,17 @@
+.layout-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  Outlet {
+    flex-grow: 1;
+  }
+  
+  Footer {
+    background-color: #888888;
+    color: white;
+    /* padding: 20px; */
+    margin-top: 200px;
+  }
+  

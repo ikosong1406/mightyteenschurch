@@ -1,0 +1,89 @@
+.container2 {
+    position: sticky;
+    background-color: #888888;
+    display: flex;
+    z-index: 99;
+    margin-top: 200px;
+}
+.image {
+    width: 200px;
+    height: 200px;
+}
+.part1 {
+    margin-left: 50px;
+    margin-top: 25px;
+}
+.part1 h3 {
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.part2 {
+    margin-left: 80px;
+    margin-top: 100px;
+}
+.part2 h3 {
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 30px;
+}
+.icons a {
+    font-size: 50px;
+    margin-left: 50px;
+}
+#fb {
+    color: blue;
+}
+#ig {
+    color: pink;
+}
+#tik {
+    color: black;
+}
+.part3 {
+    width: 30%;
+    margin-left: 80px;
+    margin-top: 60px;
+}
+.part2 h3, h4, h5 {
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.email {
+    background-color: lightgray;
+    color: black;
+    padding: 10px;
+    width: 60%;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+button {
+    background-color: #0054A7;
+    color: white;
+    margin-top: -20px;
+}
+.part2 .copy {
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 15px;
+    margin-top: 200px;
+}
+
+@media screen and (max-width: 1200px){  
+.container2 {
+    flex-direction: column; /* Stack elements on small screens */
+    text-align: center;
+  }
+  
+  .image {
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+  }
+  
+  .part1, .part2, .part3 {
+    margin: 20px 0; /* Add vertical margin for spacing */
+  }
+
+  .part3{
+    display: none;
+  }
+}

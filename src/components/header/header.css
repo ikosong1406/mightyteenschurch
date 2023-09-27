@@ -1,0 +1,71 @@
+/* Default styles */
+.nav-bar {
+    background-color: #cccccc9a;
+    display: flex;
+    position: sticky;
+    z-index: 99;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    width: 130px;
+    height: 130px;
+    margin-left: 10px;
+    margin-right: 200px;
+}
+
+.nav-bar .nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 200;
+}
+
+.links {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 900;
+    margin-left: 30px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect */
+.links:hover {
+    color: #FF6B6B; /* Text color on hover */
+    text-decoration: underline;
+}
+
+/* Active Effect (Assuming you add an "active" class to the current page link) */
+.links:active {
+    color: #FF6B6B; /* Text color for the active link */
+}
+
+@media screen and (max-width: 1200px) {
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin-left: 10px;
+    }
+    .links {
+        font-family: 'Chakra Petch', sans-serif;
+        font-weight: 700;
+        margin-left: 10px;
+        font-size: 10px;
+        text-decoration: none;
+        color: white;
+        width: 40%;
+        transition: color 0.3s; /* Smooth transition for hover effect */
+    }
+    .nav-bar .nav {
+        display: flex;
+        list-style: none;
+        margin-left: -180px;
+        width: 40%;
+    }
+    .nav-bar{
+        width: 100%;
+    }
+}
