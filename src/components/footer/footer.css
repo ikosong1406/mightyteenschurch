@@ -16,7 +16,6 @@
   background-color: var(--CharcoalBlack);
   padding: 20px;
   margin-top: 200px;
-  width: 100%;
 }
 .icons {
   display: flex;
@@ -104,18 +103,19 @@ button {
     margin-left: 0%;
   }
   a h4 {
-    font-size: 7px;
-    margin-top: 5px;
-    margin-left: 10px;
+    display: none;
   }
   #fb {
     font-size: 40px;
+    margin-left: 70px;
   }
   #ig {
     font-size: 40px;
+    margin-left: 70px;
   }
   #tik {
     font-size: 40px;
+    margin-left: 70px;
   }
   .container2 {
     position: sticky;
