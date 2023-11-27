@@ -25,7 +25,6 @@
 }
 .NavbarWrappers {
   list-style-type: none;
-  width: 100%;
 }
 
 .NavbarElement {
@@ -37,6 +36,7 @@
 .link {
   text-decoration: none;
   color: var(--cream);
+  font-weight: 700;
 }
 .link:hover {
   color: var(--ElectricBlue);

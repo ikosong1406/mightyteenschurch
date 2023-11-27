@@ -10,7 +10,6 @@
 .footer {
   background-color: var(--deepBlue);
   padding-bottom: 20px;
-  width: 100%;
 }
 .part2 {
   background-color: var(--CharcoalBlack);
@@ -96,26 +95,25 @@ button {
 
 @media screen and (max-width: 1200px) {
   .part2 {
-    padding: 10px;
+    padding: 5px;
     margin-top: 100px;
   }
   .icons a {
-    margin-left: 0%;
+    margin-left: 3%;
   }
   a h4 {
-    display: none;
+    font-size: 7px;
+    margin-top: 5px;
+    margin-left: 10px;
   }
   #fb {
     font-size: 40px;
-    margin-left: 70px;
   }
   #ig {
     font-size: 40px;
-    margin-left: 70px;
   }
   #tik {
     font-size: 40px;
-    margin-left: 70px;
   }
   .container2 {
     position: sticky;

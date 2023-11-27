@@ -63,7 +63,7 @@
 }
 .Icon {
   display: none;
-  font-size: 20px;
+  font-size: 40px;
   cursor: pointer;
   color: var(--ElectricBlue);
   margin-top: 40px;

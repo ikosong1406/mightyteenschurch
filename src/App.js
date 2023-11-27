@@ -28,6 +28,7 @@ function App() {
       <Routes>
         <Route
           index
+          path="/"
           element={
             <Layout>
               <Home />
