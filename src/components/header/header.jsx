@@ -1,79 +1,69 @@
-import React, { useState } from 'react';
-import './header.css';
-import Logo from '../../assets/327208925_576920217616732_4689464296116687124_n-removebg-preview.png';
-import { Link, NavLink } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faBars,
-  faClose,
-} from '@fortawesome/free-solid-svg-icons'
+import React, { useState, useEffect } from "react";
+import "./header.css";
+import Logo from "../../assets/mtc1.png";
+import { Link, NavLink } from "react-router-dom";
+import { ImCross } from "react-icons/im";
+import { GiHamburgerMenu } from "react-icons/gi";
+import $ from "jquery";
 
-const Header = () => {
-  const [showNav, setShowNav] = useState(false);
+const Header = ({ clicked, isClicked }) => {
+  const [scrolled, setScrolled] = useState(false);
+
+  const handleClicked = () => {
+    isClicked(!clicked);
+    console.log("clicked");
+  };
+
+  useEffect(() => {
+    // Check if the page is scrolled
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    // Attach the event listener when the component mounts
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <div className="nav-bar">
-      <Link 
-        className="logo"
-        to="/"
-        onClick={() => setShowNav(false)}>
-        <img src={Logo} alt="Logo" className='logo' />
-      </Link>
-      <nav className={`nav ${showNav ? 'mobile-show' : ''}`}>
-        <NavLink 
-          exact={true}
-          activeClassName="active"
-          className="links"
-          to="/"
-          onClick={() => setShowNav(false)}>
-          <h3 style={{color: 'white'}}>HOME</h3>
-        </NavLink>
-        <NavLink 
-          activeClassName="active"
-          className="links"
-          to="/about"
-          onClick={() => setShowNav(false)}>
-          <h3 style={{color: 'white'}}>ABOUT</h3>
-        </NavLink>
-        <NavLink
-          activeClassName="active"
-          className="links"
-          to="/events"
-          onClick={() => setShowNav(false)}
-        >
-          <h3 style={{color: 'white'}}>EVENTS</h3>
-        </NavLink>
-        <NavLink
-          activeClassName="active"
-          className="links"
-          to="/contact"
-          onClick={() => setShowNav(false)}
-        >
-          <h3 style={{color: 'white'}}>CONTACT</h3>
-        </NavLink>
-        <NavLink
-          activeClassName="active"
-          className="links"
-          to="/partnership"
-          onClick={() => setShowNav(false)}
-        >
-          <h3 style={{color: 'white'}}>PARTNERSHIP</h3>
-        </NavLink>
-        {/* <FontAwesomeIcon 
-          onClick={() => setShowNav(false)}
-          icon={faClose}
-          color="#FF6B6B"
-          size="3x"
-          className='close-icon' /> */}
-      </nav>
-      {/* <FontAwesomeIcon 
-          onClick={() => setShowNav(true)}
-          icon={faBars}
-          color="#FF6B6B"
-          size="3x"
-          className='hamburger-icon' /> */}
+    <div id="navbar" className={scrolled ? "scrolled" : ""}>
+      <div className="NavbarWrapper">
+        <Link to="/" className="NavLogo">
+          <img src={Logo} alt="Logo" className="logo" />
+        </Link>
+        <div className="NavElements">
+          <NavLink className="Links" to="/">
+            HOME
+          </NavLink>
+          <NavLink className="Links" to="/about">
+            ABOUT
+          </NavLink>
+          <NavLink className="Links" to="/events">
+            EVENTS
+          </NavLink>
+          <NavLink className="Links" to="/contact">
+            CONTACT
+          </NavLink>
+          <NavLink className="Links" to="/partnership">
+            PARTNERSHIP
+          </NavLink>
+        </div>
+        {!clicked ? (
+          <GiHamburgerMenu onClick={handleClicked} className="Icon" />
+        ) : (
+          <ImCross onClick={handleClicked} className="Icon" />
+        )}
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default Header;

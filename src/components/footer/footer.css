@@ -1,89 +1,146 @@
-.container2 {
-    position: sticky;
-    background-color: #888888;
-    display: flex;
-    z-index: 99;
-    margin-top: 200px;
+:root {
+  --cream: #fff8e1;
+  --CharcoalBlack: #333333;
+  --CoralRed: #ff6f61;
+  --LimeGreen: #a9dfbf;
+  --DarkGray: #444444;
+  --deepBlue: #001f3f;
 }
-.image {
-    width: 200px;
-    height: 200px;
-}
-.part1 {
-    margin-left: 50px;
-    margin-top: 25px;
-}
-.part1 h3 {
-    color: white;
-    font-family: 'Chakra Petch', sans-serif;
+
+.footer {
+  background-color: var(--deepBlue);
+  padding-bottom: 20px;
+  width: 100%;
 }
 .part2 {
-    margin-left: 80px;
-    margin-top: 100px;
+  background-color: var(--CharcoalBlack);
+  padding: 20px;
+  margin-top: 200px;
+  width: 100%;
 }
-.part2 h3 {
-    color: white;
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 30px;
+.icons {
+  display: flex;
 }
 .icons a {
-    font-size: 50px;
-    margin-left: 50px;
+  display: flex;
+  text-decoration: none;
+  margin-left: 15%;
+}
+a h4 {
+  font-size: 12px;
+  margin-top: 5px;
+  margin-left: 10px;
 }
 #fb {
-    color: blue;
+  color: blue;
+  font-size: 50px;
 }
 #ig {
-    color: pink;
+  color: pink;
+  font-size: 50px;
+  border-radius: 100px;
+  border: 2px var(--cream);
 }
 #tik {
-    color: black;
+  color: black;
+  font-size: 50px;
+  border-radius: 100px;
+  border: 2px var(--cream);
+}
+.container2 {
+  position: sticky;
+  display: flex;
+  z-index: 99;
+  padding: 20px;
+  padding-left: 100px;
+  padding-right: 150px;
+  width: 100%;
+}
+.image {
+  width: 150px;
+  height: 150px;
+}
+.part1 {
+  margin-left: 50px;
+  width: 30%;
+}
+.part1 h3 {
+  color: var(--cream);
+  font-size: 12px;
 }
 .part3 {
-    width: 30%;
-    margin-left: 80px;
-    margin-top: 60px;
+  width: 50%;
+  margin-top: 60px;
 }
-.part2 h3, h4, h5 {
-    color: white;
-    font-family: 'Chakra Petch', sans-serif;
+.part2 h3,
+h4,
+h5 {
+  color: var(--cream);
 }
 .email {
-    background-color: lightgray;
-    color: black;
-    padding: 10px;
-    width: 60%;
-    margin-top: 40px;
-    border-radius: 10px;
+  background-color: lightgray;
+  color: black;
+  padding: 10px;
+  width: 60%;
+  margin-top: 40px;
+  border-radius: 10px;
 }
 button {
-    background-color: #0054A7;
-    color: white;
-    margin-top: -20px;
+  background-color: #0054a7;
+  color: white;
 }
-.part2 .copy {
-    color: white;
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 15px;
-    margin-top: 200px;
+.copy {
+  color: var(--cream);
+  font-size: 12px;
+  text-align: center;
 }
 
-@media screen and (max-width: 1200px){  
-.container2 {
-    flex-direction: column; /* Stack elements on small screens */
-    text-align: center;
+@media screen and (max-width: 1200px) {
+  .part2 {
+    padding: 10px;
+    margin-top: 100px;
   }
-  
+  .icons a {
+    margin-left: 0%;
+  }
+  a h4 {
+    font-size: 7px;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  #fb {
+    font-size: 40px;
+  }
+  #ig {
+    font-size: 40px;
+  }
+  #tik {
+    font-size: 40px;
+  }
+  .container2 {
+    position: sticky;
+    display: flex;
+    z-index: 99;
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0%;
+  }
   .image {
-    width: 150px; /* Adjust as needed */
-    height: 150px; /* Adjust as needed */
+    width: 100px;
+    height: 100px;
   }
-  
-  .part1, .part2, .part3 {
-    margin: 20px 0; /* Add vertical margin for spacing */
+  .part1 {
+    margin-left: 30%;
+    justify-self: center;
   }
-
-  .part3{
+  .part1 h3 {
+    font-size: 7px;
+  }
+  .part3 {
     display: none;
+  }
+  .copy {
+    font-size: 7px;
   }
 }

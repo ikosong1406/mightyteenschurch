@@ -1,0 +1,68 @@
+:root {
+  --CharcoalBlack: #333333;
+  --ElectricBlue: #3498db;
+  --CoralRed: #ff6f61;
+  --LimeGreen: #a9dfbf;
+  --DarkGray: #444444;
+  --cream: #fff8e1;
+  --deepBlue: #001f3f;
+}
+
+.Navbars {
+  background-color: var(--DarkGray);
+  padding-top: 50px;
+  padding-bottom: 20px;
+  position: fixed;
+  width: 100%;
+  transition: 0.2s ease-in-out;
+  position: fixed;
+  z-index: 99;
+}
+@media screen and (min-width: 920px) {
+  .Navbars {
+    display: none;
+  }
+}
+.NavbarWrappers {
+  list-style-type: none;
+  width: 100%;
+}
+
+.NavbarElement {
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--cream);
+}
+.link:hover {
+  color: var(--ElectricBlue);
+  padding: 10px;
+  border-radius: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.active {
+  color: var(--ElectricBlue);
+}
+.linkbtn {
+  text-decoration: none;
+  color: var(--cream);
+  background-color: var(--gold);
+  padding: 10px;
+  border-radius: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.linkbtn:hover {
+  background-color: var(--ElectricBlue);
+}
+
+.Navbutton {
+  margin-top: 50px;
+  text-align: center;
+  padding: 10px;
+}
