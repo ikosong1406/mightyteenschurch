@@ -97,9 +97,10 @@ button {
   .part2 {
     padding: 5px;
     margin-top: 100px;
+    padding-right: 50%;
   }
   .icons a {
-    margin-left: 3%;
+    justify-content: space-between;
   }
   a h4 {
     font-size: 7px;
