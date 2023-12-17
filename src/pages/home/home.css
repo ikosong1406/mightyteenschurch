@@ -71,11 +71,13 @@
 .homePart3-imgDiv {
   display: flex;
   margin-top: 40px;
+  width: 100%;
+  justify-content: space-evenly;
 }
 .homePart3-imgDiv img {
   width: 300px;
   height: 300px;
-  margin-left: 30px;
+  /* margin-left: 20%; */
 }
 .resourcebtn {
   justify-self: center;
@@ -138,7 +140,7 @@
   margin-top: 20px;
 }
 .textArea .description {
-  width: 600px;
+  width: 70%;
   font-size: 15px;
 }
 .iconsX {

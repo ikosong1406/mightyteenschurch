@@ -73,10 +73,6 @@
   #navbar {
     background-color: transparent;
     padding: 15px;
-    position: fixed;
-    /* width: 90%; */
-    height: 7%;
-    z-index: 99;
   }
   .NavElements {
     display: none;

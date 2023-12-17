@@ -8,6 +8,11 @@ function Menu() {
       <div className="Navbars">
         <ul className="NavbarWrappers">
           <li className="NavbarElement">
+            <NavLink className="link" to="/">
+              HOME
+            </NavLink>
+          </li>
+          <li className="NavbarElement">
             <NavLink className="link" to="/about">
               ABOUT
             </NavLink>
